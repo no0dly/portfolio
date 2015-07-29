@@ -1,12 +1,19 @@
-<!-- build:js js/vendor.js --> 
-//bower:js
+footer.page-footer
+	.footer-cont
+		a.sprite.sprite-lock-ico(href="/login.html")
+		.copy © 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его
+		
+if selected === "Мои работы"
+	include ../common/popup.jade
+
+// build:js js/vendor.js
+// bower:js
 script(src='/bower/modernizr/modernizr.js')
 script(src='/bower/jquery/dist/jquery.js')
 script(src='/bower/jquery-placeholder/jquery.placeholder.js')
-//endbower
-<!-- endbuild -->
+// endbower
+// endbuild
 
-<!-- build:js js/main.js --> 
-script(src="js/main.js")
+// build:js js/main.js
 
-<!-- endbuild -->
+// endbuild

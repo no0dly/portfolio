@@ -1,0 +1,30 @@
+.popup
+	form.popup__form(action="ajax.php" method="POST" name="page2-form" id="open-modal")
+		fieldset.popup__wrap
+			header.popup__header
+				legend.popup__title Добавление проекта
+				a.popup__close(id="close-popup")
+			.popup__inputs
+				.form-group
+					label.label(for="prj-name") Название проекта
+						input.input-text(type="text" name="project-name" data-validation="text" placeholder="Введите название" id="prj-name")
+
+				.form-group
+					label.label(for="prj-file-name") Картинка проекта
+						.fileupload
+							.file-downl
+								input(type="file" class="input-file" id="prj-file" name="files")
+								input(id="fileurl" type="hidden" name="fileurl")
+							input.input-text.file-url(type="text" name="project-file-name" data-validation="file" placeholder="загрузите изображение" id="prj-file-name")
+				
+				.form-group
+					label.label(for="prj-url") URL проекта
+						input.input-text(type="url" name="project-url" placeholder="добавьте ссылку" data-validation="text" id="prj-url")
+
+				.form-group
+					label.label(for="prj-url") Описание
+						textarea.input-text.my-works-area(name="project-description" data-validation="text" placeholder="Пара слов о Вашем проекте")
+				
+				.submit
+					input.submit__btn(type="submit" value="Добавить" id="proj-sbm")
+

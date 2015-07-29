@@ -1,0 +1,53 @@
+extends ../layouts/main-layout.jade
+
+block page-link
+	-var selected = "Обо мне";
+
+block title
+	title portfolio
+
+block content
+	section.about
+		h2.about__title Основная информация
+		.about__main
+			.avatar
+				.avatar__box
+					img.avatar__img(src="images/avatar.png", alt="avatar")
+			.about__personal
+				ul.about__personal-list
+					li.about__personal-item Меня зовут:
+						span.about__personal-gen Дермановский Вадим Сергеевич
+					li.about__personal-item Мой возраст:
+						span.about__personal-gen 27 лет
+					li.about__personal-item Мой город:
+						span.about__personal-gen Лас Вегас
+					li.about__personal-item Моя специализация:
+						span.about__personal-gen FRONTEND разработчик
+					li.about__personal-item
+						span.about__personal-gen Ключевые навыки:
+						.skills
+							.skills__item html
+							.skills__item css
+							.skills__item javascript
+							.skills__item gulp
+							.skills__item git
+	section.about
+		h2.about__title Опыт работы
+		ul.about__list
+			li.about__item
+				.about__where.bag-ico Биржа фриланса - Фронт енд разработчик
+					p.about__date Август 2014 - по настоящее время
+
+			li.about__item
+				.about__where.bag-ico Бритишь Петролиум - Тех. поддержка терминальной сети
+					p.about__date Март 2012 - Август 2014
+	section.about
+		h2.about__title Образование
+		ul.about__list
+			li.about__item
+				.about__where.magi-ico Законченной высшее. МИЭТ ЭКТ.
+					p.about__date Август 2014 - по настоящее время
+
+			li.about__item
+				.about__where.doc-ico Бритишь Петролиум - Тех. поддержка терминальной сети
+					p.about__date Март 2012 - Август 2014

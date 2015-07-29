@@ -1,15 +1,15 @@
 {
-  "name": "project",
+  "name": "portfolio",
   "version": "0.0.0",
   "authors": [
     "Vadim D."
   ],
-  "description": "template",
+  "description": "portfolio",
   "moduleType": [
     "node"
   ],
   "keywords": [
-    "noodly's empty template"
+    "noodly's portfolio"
   ],
   "license": "MIT",
   "dependencies": {

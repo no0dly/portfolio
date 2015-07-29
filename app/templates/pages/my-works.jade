@@ -1,0 +1,61 @@
+extends ../layouts/main-layout.jade
+
+block page-link
+	-var selected = "Мои работы";
+
+block title
+	title my works
+
+block content
+	section.projects
+		h2.projects__title
+		ul.projects__list
+			li.projects__item
+				.project
+					.project__logo-wrap
+						.project__logo
+							img.project__img(src="images/site1.png", alt="project logo")
+							.project-hover
+								a.project__link-hover(href="#")
+					a.project__address www.site.com
+				.project__info
+					p.project__info-text Информация о проекте
+					p.project__info-text 1 превью 2 строки....
+			li.projects__item
+				.project
+					.project__logo_wrap
+						.project__logo
+							img.project__img(src="images/site2.png", alt="project logo")
+							.project-hover
+								a.project__link-hover(href="#")
+					a.project__address www.site.com
+				.project__info
+					p.project__info-text Информация о проекте
+					p.project__info-text 2 превью 2 строки....
+			li.projects__item
+				.project
+					.project__logo-wrap
+						.project__logo
+							img.project__img(src="images/site3.png", alt="project logo")
+							.project-hover
+								a.project__link-hover(href="#")
+				a.project__address www.site.com
+					.project__info
+					p.project__info-text Информация о проекте
+					p.project__info-text 3 превью 2 строки....
+			li.projects__item
+				.project
+					.project__logo-wrap
+						.project__logo
+							img.project__img(src="images/site4.png", alt="project logo")
+							.project-hover
+								a.project__link-hover(href="#")
+					a.project__address www.site.com
+				.project__info
+					p.project__info-text Информация о проекте
+					p.project__info-text 4 превью 2 строки....
+			li.projects__item
+				.project
+					.project__logo.project__add
+						.project__add_wrap
+							a.project__add-link(href="#" id="add-new-proj") Добавить проект

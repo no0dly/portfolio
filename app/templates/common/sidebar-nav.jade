@@ -1,0 +1,11 @@
+block page-link
+-var menu = { "Обо мне": "/", "Мои работы": "/my-works.html", "Связаться со мной": "/contact-me.html"};
+nav.navigation
+	ul.navigation__list
+		each val, key in menu
+			if selected === key
+				li.navigation__item.current
+					a.navigation-link(href=val)= key
+			else
+				li.navigation__item
+					a.navigation-link(href=val)= key
