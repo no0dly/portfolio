@@ -1,0 +1,28 @@
+extends ../layouts/main-layout.jade
+
+block page-link
+	-var selected = "Связаться со мной";
+
+block title
+	title contact me
+
+block content
+		section.contact-me
+			header.contact-me__header
+				h2.contact-me__title У вас интересный проект? Напишите мне
+			form.contact-me__form(action="ajax.php" method="POST" name="page3-form" id="page3-form")
+				.user-info
+					label.label(for="contact-me-name") Имя
+						input.input-text(type="text" name="contact-name" placeholder="Как к вам обращаться" id="contact-me-name" data-validation="text")
+					label.label(for="contact-me-email") Email
+						input.input-text(type="text" name="contact-email" placeholder="Куда мне писать" id="contact-me-email" data-validation="email")
+				.user-info__area
+					label.label(for="prj-area") Сообщение
+						textarea(name="project-description" id="prj-area" class="input-text contact-area" placeholder="Кратко в чем суть" data-validation="area")
+				.user-info__captcha
+					.g-recaptcha(data-sitekey="6LeqCggTAAAAAMTQiNX8StE6U86pDQJx4hx8NXJq")
+				.user-info__bnt
+					.user-info__bnt-left
+						input.user-info__submit(type="submit" class="contact-subm contact-btn" value="Отправить" id="contact-me-sbm")
+					.user-info__bnt-right
+						input.user-info__reset(type="reset" class="contact-clear contact-btn" value="Очистить" id="contact-me-clear")

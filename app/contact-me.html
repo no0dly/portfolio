@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>contact me</title>
+    <meta name="description" content="this is my portfolio">
+    <meta name="keywords" content="portfolio">
+    <meta name="author" content="Vadim D.">
+    <link rel="shortcut icon" href="/favicon.ico" type="icon/x-icon">
+    <link rel="icon" href="/favicon.ico" type="icon/x-icon">
+    <!-- build:css css/vendor.min.css -->
+    <!-- bower:css-->
+    <link rel="stylesheet" href="/bower/normalize.css/normalize.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css fonts/fonts.min.css -->
+    <!-- endbuild -->
+    <!-- build:css css/main.min.css -->
+    <!-- endbuild -->
+    <!-- build:js js/modernizr.min.js -->
+    <!-- endbuild -->
+  </head>
+
+  <body>
+    <!--[if lt IE 8]>
+<p class="browsehappy">	Your bowser<strong>got outdated</strong>.Please, <a href="http://browsehappy.com/">update</a> your browser.</p>
+<![endif]-->
+    <div class="wraper">
+      <header class="page-header">
+        <div class="container">
+          <a href="" class="logo"><img src="images/logo.png" alt="logo" class="logo__img"><span class="logo__title">Portfolio Vadim D.</span></a>
+          <ul class="socials">
+            <li class="socials__item"><a href="#" class="sptite sprite-vk">vk</a></li>
+            <li class="socials__item"><a href="#" class="sptite sprite-tw">tw</a></li>
+            <li class="socials__item"><a href="#" class="sptite sprite-fb">fb</a></li>
+            <li class="socials__item"><a href="#" class="sptite sprite-gh">gh</a></li>
+          </ul>
+        </div>
+      </header>
+      <main class="container">
+        <aside class="sidebar">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="/" class="navigation-link">Обо мне</a></li>
+              <li class="navigation__item"><a href="/my-works.html" class="navigation-link">Мои работы</a></li>
+              <li class="navigation__item current"><a href="/contact-me.html" class="navigation-link">Связаться со мной</a></li>
+            </ul>
+          </nav><address class="contacts"><ul class="contacts__list"><li class="contacts__item">Контакты</li><li class="contacts__item"><a href="mailto:thenoodly@gmail.com" class="contacts__link contacts__link-email">thenoodly@gmail.com</a></li><li class="contacts__item"><a href="tel:+1-(702)-964-5440" class="contacts__link contacts__link-cell">+1-(702)-964-5440</a></li><li class="contacts__item"><a href="skype:skype_no0dly?chat" class="contacts__link contacts__link-skype">no0dly</a></li></ul></address></aside>
+        <div
+        class="main-content">
+          <section class="contact-me">
+            <header class="contact-me__header">
+              <h2 class="contact-me__title">У вас интересный проект? Напишите мне</h2></header>
+            <form action="ajax.php" method="POST" name="page3-form" id="page3-form" class="contact-me__form">
+              <div class="user-info">
+                <label for="contact-me-name" class="label">Имя
+                  <input type="text" name="contact-name" placeholder="Как к вам обращаться" id="contact-me-name" data-validation="text" class="input-text">
+                </label>
+                <label for="contact-me-email" class="label">Email
+                  <input type="text" name="contact-email" placeholder="Куда мне писать" id="contact-me-email" data-validation="email" class="input-text">
+                </label>
+              </div>
+              <div class="user-info__area">
+                <label for="prj-area" class="label">Сообщение
+                  <textarea name="project-description" id="prj-area" placeholder="Кратко в чем суть" data-validation="area" class="input-text contact-area"></textarea>
+                </label>
+              </div>
+              <div class="user-info__captcha">
+                <div data-sitekey="6LeqCggTAAAAAMTQiNX8StE6U86pDQJx4hx8NXJq" class="g-recaptcha"></div>
+              </div>
+              <div class="user-info__bnt">
+                <div class="user-info__bnt-left">
+                  <input type="submit" value="Отправить" id="contact-me-sbm" class="user-info__submit contact-subm contact-btn">
+                </div>
+                <div class="user-info__bnt-right">
+                  <input type="reset" value="Очистить" id="contact-me-clear" class="user-info__reset contact-clear contact-btn">
+                </div>
+              </div>
+            </form>
+          </section>
+    </div>
+    </main>
+    </div>
+    <footer class="page-footer">
+      <div class="footer-cont">
+        <a href="/login.html" class="sprite sprite-lock-ico"></a>
+        <div class="copy">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+      </div>
+    </footer>
+    <!-- build:js js/vendor.js-->
+    <!-- bower:js-->
+    <script src="/bower/modernizr/modernizr.js"></script>
+    <script src="/bower/jquery/dist/jquery.js"></script>
+    <script src="/bower/jquery-placeholder/jquery.placeholder.js"></script>
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:js js/main.js-->
+    <!-- endbuild-->
+  </body>
+
+</html>
