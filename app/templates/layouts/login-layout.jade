@@ -1,0 +1,16 @@
+doctype html
+html(lang="ru-RU")
+
+	include ../common/head.jade
+
+	body
+		<!--[if lt IE 8]>
+		<p class="browsehappy">	Your bowser<strong>got outdated</strong>.Please, <a href="http://browsehappy.com/">update</a> your browser.</p>
+		<![endif]-->
+		.wraper
+			main.container
+				
+				.main-content
+					block content
+
+		include ../common/footer.jade

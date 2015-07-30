@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>autorization</title>
+    <meta name="description" content="this is my portfolio">
+    <meta name="keywords" content="portfolio">
+    <meta name="author" content="Vadim D.">
+    <link rel="shortcut icon" href="/favicon.ico" type="icon/x-icon">
+    <link rel="icon" href="/favicon.ico" type="icon/x-icon">
+    <!-- build:css css/vendor.min.css -->
+    <!-- bower:css-->
+    <link rel="stylesheet" href="/bower/normalize.css/normalize.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css fonts/fonts.min.css -->
+    <!-- endbuild -->
+    <!-- build:css css/main.min.css -->
+    <!-- endbuild -->
+    <!-- build:js js/modernizr.min.js -->
+    <!-- endbuild -->
+  </head>
+
+  <body>
+    <!--[if lt IE 8]>
+<p class="browsehappy">	Your bowser<strong>got outdated</strong>.Please, <a href="http://browsehappy.com/">update</a> your browser.</p>
+<![endif]-->
+    <div class="wraper">
+      <main class="container">
+        <div class="main-content">
+          <section class="login">
+            <header class="login__header">
+              <h2 class="login__title">Авторизируйтесь</h2>
+              <form action="ajax.php" method="post" name="page4-form" id="login-to-site" class="login__form login-form">
+                <div class="login__input">
+                  <div class="login__input_wrap">
+                    <label for="login-name" class="label"><span class="login__input_span">Логин</span>
+                      <input type="text" name="login-name" placeholder="Введите логин" id="login-name" data-validation="text" class="input-text">
+                    </label>
+                  </div>
+                  <div class="login__input_wrap">
+                    <label for="login-pass" class="label"><span class="login__input_span">Пароль</span>
+                      <input type="password" name="login-password" placeholder="Введите пароль" id="login-pass" data-validation="text" class="input-text">
+                    </label>
+                  </div>
+                </div>
+                <div class="login__btm">
+                  <input type="submit" value="Войти" id="proj-sbm" class="login__submit">
+                </div>
+              </form>
+            </header>
+          </section>
+        </div>
+      </main>
+    </div>
+    <footer class="page-footer">
+      <div class="footer-cont">
+        <a href="/login.html" class="sprite sprite-lock-ico"></a>
+        <div class="copy">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+      </div>
+    </footer>
+    <!-- build:js js/vendor.js-->
+    <!-- bower:js-->
+    <script src="/bower/modernizr/modernizr.js"></script>
+    <script src="/bower/jquery/dist/jquery.js"></script>
+    <script src="/bower/jquery-placeholder/jquery.placeholder.js"></script>
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:js js/main.js-->
+    <!-- endbuild-->
+  </body>
+
+</html>
