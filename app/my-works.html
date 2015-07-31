@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="/bower/normalize.css/normalize.css">
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css fonts/fonts.min.css -->
-    <!-- endbuild -->
     <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="/css/main.css">
     <!-- endbuild -->
     <!-- build:js js/modernizr.min.js -->
+    <link rel="stylesheet" href="/bower/modernizr/modernizr.js">
     <!-- endbuild -->
   </head>
 
@@ -29,13 +29,13 @@
 <![endif]-->
     <div class="wraper">
       <header class="page-header">
-        <div class="container">
-          <a href="" class="logo"><img src="images/logo.png" alt="logo" class="logo__img"><span class="logo__title">Portfolio Vadim D.</span></a>
+        <div class="page-header__wrap">
+          <a href="#" class="logo"><img src="images/logo.png" alt="logo" class="logo__img"><span class="logo__title">Portfolio Vadim D.</span></a>
           <ul class="socials">
-            <li class="socials__item"><a href="#" class="sptite sprite-vk">vk</a></li>
-            <li class="socials__item"><a href="#" class="sptite sprite-tw">tw</a></li>
-            <li class="socials__item"><a href="#" class="sptite sprite-fb">fb</a></li>
-            <li class="socials__item"><a href="#" class="sptite sprite-gh">gh</a></li>
+            <li class="socials__item"><a href="#" class="sprite sprite-vk">vk</a></li>
+            <li class="socials__item"><a href="#" class="sprite sprite-tw">tw</a></li>
+            <li class="socials__item"><a href="#" class="sprite sprite-fb">fb</a></li>
+            <li class="socials__item"><a href="#" class="sprite sprite-gh">gh</a></li>
           </ul>
         </div>
       </header>
@@ -43,23 +43,21 @@
         <aside class="sidebar">
           <nav class="navigation">
             <ul class="navigation__list">
-              <li class="navigation__item"><a href="/" class="navigation-link">About me</a></li>
-              <li class="navigation__item current"><a href="/my-works.html" class="navigation-link">My works</a></li>
-              <li class="navigation__item"><a href="/contact-me.html" class="navigation-link">Contact me</a></li>
+              <li class="navigation__item"><a href="/" class="navigation__link">About me</a></li>
+              <li class="navigation__item current"><a href="/my-works.html" class="navigation__link">My works</a></li>
+              <li class="navigation__item"><a href="/contact-me.html" class="navigation__link">Contact me</a></li>
             </ul>
           </nav><address class="contacts"><ul class="contacts__list"><li class="contacts__item">My contacts</li><li class="contacts__item"><a href="mailto:thenoodly@gmail.com" class="contacts__link contacts__link-email">thenoodly@gmail.com</a></li><li class="contacts__item"><a href="tel:+1-(702)-964-5440" class="contacts__link contacts__link-cell">+1-(702)-964-5440</a></li><li class="contacts__item"><a href="skype:skype_no0dly?chat" class="contacts__link contacts__link-skype">no0dly</a></li></ul></address></aside>
         <div
         class="main-content">
           <section class="projects">
-            <h2 class="projects__title"></h2>
+            <h2 class="projects__title">Мои работы</h2>
             <ul class="projects__list">
               <li class="projects__item">
                 <div class="project">
                   <div class="project__logo-wrap">
                     <div class="project__logo"><img src="images/site1.png" alt="project logo" class="project__img">
-                      <div class="project-hover">
-                        <a href="#" class="project__link-hover"></a>
-                      </div>
+                      <div class="project-hover"><a href="#" class="project__link-hover">there is name of website</a></div>
                     </div>
                   </div><a class="project__address">www.site.com</a></div>
                 <div class="project__info">
@@ -69,11 +67,9 @@
               </li>
               <li class="projects__item">
                 <div class="project">
-                  <div class="project__logo_wrap">
+                  <div class="project__logo-wrap">
                     <div class="project__logo"><img src="images/site2.png" alt="project logo" class="project__img">
-                      <div class="project-hover">
-                        <a href="#" class="project__link-hover"></a>
-                      </div>
+                      <div class="project-hover"><a href="#" class="project__link-hover">there is name of website</a></div>
                     </div>
                   </div><a class="project__address">www.site.com</a></div>
                 <div class="project__info">
@@ -85,9 +81,7 @@
                 <div class="project">
                   <div class="project__logo-wrap">
                     <div class="project__logo"><img src="images/site3.png" alt="project logo" class="project__img">
-                      <div class="project-hover">
-                        <a href="#" class="project__link-hover"></a>
-                      </div>
+                      <div class="project-hover"><a href="#" class="project__link-hover">there is name of website</a></div>
                     </div>
                   </div>
                 </div><a class="project__address">www.site.com<div class="project__info"></div><p class="project__info-text">Project information</p><p class="project__info-text">3 превью 2 строки....</p></a></li>
@@ -95,9 +89,7 @@
                 <div class="project">
                   <div class="project__logo-wrap">
                     <div class="project__logo"><img src="images/site4.png" alt="project logo" class="project__img">
-                      <div class="project-hover">
-                        <a href="#" class="project__link-hover"></a>
-                      </div>
+                      <div class="project-hover"><a href="#" class="project__link-hover">there is name of website</a></div>
                     </div>
                   </div><a class="project__address">www.site.com</a></div>
                 <div class="project__info">
@@ -106,11 +98,7 @@
                 </div>
               </li>
               <li class="projects__item">
-                <div class="project">
-                  <div class="project__logo project__add">
-                    <div class="project__add_wrap"><a href="#" id="add-new-proj" class="project__add-link">Add project</a></div>
-                  </div>
-                </div>
+                <div class="project__add"><a href="#" id="add-new-proj" class="project__add-link">Add project</a></div>
               </li>
             </ul>
           </section>
@@ -137,24 +125,24 @@
               </label>
             </div>
             <div class="form-group">
-              <label for="prj-file-name" class="label">Project image
+              <label for="prj-file" class="label">Project image
                 <div class="fileupload">
                   <div class="file-downl">
                     <input type="file" id="prj-file" name="files" class="input-file">
                     <input id="fileurl" type="hidden" name="fileurl">
                   </div>
-                  <input type="text" name="project-file-name" data-validation="file" placeholder="download image" id="prj-file-name" class="input-text file-url">
+                  <input type="text" name="project-file-name" data-validation="file" placeholder="download image" id="prj-file-name" class="input-text file-upl">
                 </div>
               </label>
             </div>
             <div class="form-group">
               <label for="prj-url" class="label">Project URL
-                <input type="url" name="project-url" placeholder="добавьте ссылку" data-validation="text" id="prj-url" class="input-text">
+                <input type="url" name="project-url" placeholder="add url" data-validation="text" id="prj-url" class="input-text">
               </label>
             </div>
             <div class="form-group">
               <label for="prj-url" class="label">Description
-                <textarea name="project-description" data-validation="text" placeholder="few words about your project" class="input-text my-works-area"></textarea>
+                <textarea name="project-description" data-validation="text" placeholder="few words about your project" class="my-works-area input-text"></textarea>
               </label>
             </div>
             <div class="submit">

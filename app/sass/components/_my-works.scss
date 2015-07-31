@@ -1,0 +1,132 @@
+.projects {
+	background: #eff3f7;
+	border-radius: 4px;
+	min-height: 840px;
+	margin-bottom: 40px;
+}
+
+.projects__title {
+	@extend .about__title;
+	margin-bottom: 10px;
+}
+
+.projects__list {
+	padding: 0;
+}
+
+.projects__item {
+	display: inline-block;
+	margin-left: 22px;
+	margin-bottom: 42px;
+	text-align: center;
+	width: 183px;
+	vertical-align: top;
+}
+
+.project {
+	margin-bottom: 5px;
+}
+
+.project__logo-wrap {
+	width: 183px;
+	height: 129px;
+	overflow: hidden;
+	border: 2px solid #3ba8c0;
+	border-radius: 4px;
+	position: relative;
+	margin-bottom: 4px;
+}
+
+.project__logo {
+	width: 100%;
+	height: 100%;
+
+	&:hover .project-hover {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+	&:hover {
+		background-color: rgb(1,108,164);
+	}
+	&:hover .project__img {
+		opacity: 0.2;
+	}
+}
+
+.project__img {
+	width: 100%;
+}
+
+.project-hover {
+	position: absolute;
+	width: 183px;
+	top: 50px;
+	text-align: center;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.project__link-hover {
+	display: inline-block;
+	word-break: break-word;
+	color: #fff;
+	font-size: 0.75em;
+	border-radius: 5px;
+	border: 2px solid #fff;
+	padding: 0 4px;
+	margin: 0 10px 0 6px;
+}
+
+/*for ie8*/
+.no-opacity .project__logo:hover .site-image  {
+	display: none;
+}
+
+.no-csstransforms  .project-hover {
+	display: none;
+}
+
+.no-csstransforms  .project__logo:hover > .project-hover {
+	display: block;
+}
+/*for ie8*/
+
+.project__address {
+	color: #3ba8c0;
+	font-size: 0.8125em;
+	font-family: "fira_sanslight_italic";
+}
+
+.project__info-text {
+	margin: 0;
+	padding: 0;
+	color: #4a545d;
+	font-size: 0.9375em;
+	font-family: "fira_sanslight";
+	line-height: 18px;
+}
+
+.project__add {
+	height: 129px;
+	width: 182px;
+	border-radius: 4px;
+	border: 1px dashed #3ba8c0;
+	background: #edf8fc url("../images/add-project.png") no-repeat center 35px;
+	position: relative;
+	&:hover {
+		background-position: center 30px;
+		transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+	}
+}
+.project__add-link {
+	display: block;
+	height: 129px;
+	width: 182px;
+	padding-top: 76px;
+	font-size: 0.8125em;
+	font-family: "fira_sanslight";
+	color: #3ba8c0;
+}

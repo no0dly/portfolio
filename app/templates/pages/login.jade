@@ -7,15 +7,15 @@ block content
 	section.login
 		header.login__header
 			h2.login__title Autorize
-			form.login__form(action="ajax.php" method="post" class="login-form" name="page4-form" id="login-to-site")
-				.login__input
-					.login__input_wrap
-						label.label(for="login-name")
-							span.login__input_span Login
-							input.input-text(type="text" name="login-name" placeholder="Your login" id="login-name" data-validation="text")
-					.login__input_wrap
-						label.label(for="login-pass")
-							span.login__input_span Password
-							input.input-text(type="password" name="login-password" placeholder="your password" id="login-pass" data-validation="text")
-				div.login__btm
-					input.login__submit(type="submit" value="Enter" id="proj-sbm")
+		form.login__form(action="ajax.php" method="post" class="login-form" name="page4-form" id="login-to-site")
+			.login__input
+				.login__input_wrap
+					label.label(for="login-name")
+						span.login__input_span Login
+						input.input-text(type="text" name="login-name" placeholder="Your login" id="login-name" data-validation="text")
+				.login__input_wrap
+					label.label(for="login-pass")
+						span.login__input_span Password
+						input.input-text(type="password" name="login-password" placeholder="Your password" id="login-pass" data-validation="text")
+			div.login__btm
+				input.login__submit(type="submit" value="Enter" id="proj-sbm")

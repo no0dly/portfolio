@@ -1,0 +1,82 @@
+//social icons
+.sprite {
+	background-image: url(../images/spritesheet.png);
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.sprite-fb {
+	width: 47px;
+	height: 47px;
+	background-position: -40px -40px;
+}
+
+.sprite-gh {
+	width: 47px;
+	height: 47px;
+	background-position: -294px -40px;
+}
+
+
+.sprite-lock-ico {
+	width: 20px;
+	height: 32px;
+	background-position: -167px -167px;
+}
+
+.sprite-tw {
+	width: 47px;
+	height: 47px;
+	background-position: -167px -279px;
+}
+
+.sprite-vk {
+	width: 47px;
+	height: 47px;
+	background-position: -421px -40px;
+}
+
+.sprite-vk:hover {
+	background-position: -421px -167px;
+}
+
+.sprite-tw:hover {
+	background-position: -294px -279px;
+}
+
+.sprite-fb:hover {
+	background-position: -167px -40px;
+}
+
+.sprite-gh:hover {
+	background-position: -40px -167px;
+}
+
+
+// address icons
+.contacts__link-email {
+	background: #41b9d4 url('../images/mail-ico.png') no-repeat 20px 10px;
+}
+
+.contacts__link-cell {
+	background: #48cbe8 url('../images/cell-ico.png') no-repeat 20px 8px;
+}
+
+.contacts__link-skype {
+	background: #51daf8 url('../images/skype-ico.png') no-repeat 20px 8px;
+	border-radius:0 0 4px 4px;
+}
+
+// sections ico
+
+.bag-ico {
+	background: url("../images/bag-ico.png") no-repeat 0 center;
+}
+
+.magi-ico {
+	background: url("../images/magi-ico.png") no-repeat 0 center;
+	}
+
+.doc-ico {
+	background: url("../images/doc-ico.png") no-repeat 10px center;
+}

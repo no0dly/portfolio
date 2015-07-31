@@ -1,0 +1,98 @@
+.contact-me {
+	background-color: #eff3f7;
+	height: 840px;
+	margin-bottom: 40px;
+	border-radius: 4px;
+}
+
+.contact-me__title {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 1.6875em;
+}
+
+.contact-me__header {
+	width: 100%;
+	height: 138px;
+	line-height: 121px;
+	background: #48cbe8;
+	border-bottom: 17px solid #67dffa;
+	margin-bottom: 48px;
+	border-radius: 4px 4px 0 0;
+}
+
+.contact-me__form {
+	width: 402px;
+	margin: 0 auto;
+	.input-text{
+		height: 41px;
+		display: block;
+	}
+	.contact-area {
+		width: 100%;
+		height: 183px;
+	}
+}
+
+.user-info {
+	margin-bottom: 16px;
+
+	@include clearfix;
+}
+
+.label-left {
+	float: left;
+}
+
+.label-right {
+	float: right;
+}
+
+.user-info__area {
+	margin-bottom: 40px;
+}
+
+.user-info__btn {
+	margin-bottom: 198px;
+}
+
+.user-info__bnt-left {
+	float:left;
+}
+
+.user-info__bnt-right {
+	float: right;
+}
+
+.user-info__submit,
+.user-info__reset {
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	padding: 0 21px;
+	height: 33px;
+	line-height: 33px;
+	&:hover {
+		box-shadow: 0 0 0 0;
+		transform: translateY(2px);
+		transition: all .5s;
+		-webkit-transition: all 0.5s;
+	}
+}
+
+
+.user-info__submit {
+	background-color: #48cbe8;
+	box-shadow: 0 2px 0 0 #3ba8c0;
+}
+
+.user-info__reset {
+	background-color: #849db5;
+	box-shadow: 0 2px 0 0 #687b8f;
+}
+
+.user-info__captcha {
+	margin-bottom: 22px;
+}

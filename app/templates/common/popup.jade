@@ -10,20 +10,20 @@
 						input.input-text(type="text" name="project-name" data-validation="text" placeholder="enter name of project" id="prj-name")
 
 				.form-group
-					label.label(for="prj-file-name") Project image
+					label.label(for="prj-file") Project image
 						.fileupload
 							.file-downl
-								input(type="file" class="input-file" id="prj-file" name="files")
+								input.input-file(type="file" id="prj-file" name="files")
 								input(id="fileurl" type="hidden" name="fileurl")
-							input.input-text.file-url(type="text" name="project-file-name" data-validation="file" placeholder="download image" id="prj-file-name")
+							input.input-text.file-upl(type="text" name="project-file-name" data-validation="file" placeholder="download image" id="prj-file-name")
 				
 				.form-group
 					label.label(for="prj-url") Project URL
-						input.input-text(type="url" name="project-url" placeholder="добавьте ссылку" data-validation="text" id="prj-url")
+						input.input-text(type="url" name="project-url" placeholder="add url" data-validation="text" id="prj-url")
 
 				.form-group
 					label.label(for="prj-url") Description
-						textarea.input-text.my-works-area(name="project-description" data-validation="text" placeholder="few words about your project")
+						textarea.my-works-area.input-text(name="project-description" data-validation="text" placeholder="few words about your project")
 				
 				.submit
 					input.submit__btn(type="submit" value="Добавить" id="proj-sbm")

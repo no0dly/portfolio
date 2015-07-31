@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="/bower/normalize.css/normalize.css">
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css fonts/fonts.min.css -->
-    <!-- endbuild -->
     <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="/css/main.css">
     <!-- endbuild -->
     <!-- build:js js/modernizr.min.js -->
+    <link rel="stylesheet" href="/bower/modernizr/modernizr.js">
     <!-- endbuild -->
   </head>
 
@@ -29,13 +29,13 @@
 <![endif]-->
     <div class="wraper">
       <header class="page-header">
-        <div class="container">
-          <a href="" class="logo"><img src="images/logo.png" alt="logo" class="logo__img"><span class="logo__title">Portfolio Vadim D.</span></a>
+        <div class="page-header__wrap">
+          <a href="#" class="logo"><img src="images/logo.png" alt="logo" class="logo__img"><span class="logo__title">Portfolio Vadim D.</span></a>
           <ul class="socials">
-            <li class="socials__item"><a href="#" class="sptite sprite-vk">vk</a></li>
-            <li class="socials__item"><a href="#" class="sptite sprite-tw">tw</a></li>
-            <li class="socials__item"><a href="#" class="sptite sprite-fb">fb</a></li>
-            <li class="socials__item"><a href="#" class="sptite sprite-gh">gh</a></li>
+            <li class="socials__item"><a href="#" class="sprite sprite-vk">vk</a></li>
+            <li class="socials__item"><a href="#" class="sprite sprite-tw">tw</a></li>
+            <li class="socials__item"><a href="#" class="sprite sprite-fb">fb</a></li>
+            <li class="socials__item"><a href="#" class="sprite sprite-gh">gh</a></li>
           </ul>
         </div>
       </header>
@@ -43,9 +43,9 @@
         <aside class="sidebar">
           <nav class="navigation">
             <ul class="navigation__list">
-              <li class="navigation__item"><a href="/" class="navigation-link">About me</a></li>
-              <li class="navigation__item"><a href="/my-works.html" class="navigation-link">My works</a></li>
-              <li class="navigation__item current"><a href="/contact-me.html" class="navigation-link">Contact me</a></li>
+              <li class="navigation__item"><a href="/" class="navigation__link">About me</a></li>
+              <li class="navigation__item"><a href="/my-works.html" class="navigation__link">My works</a></li>
+              <li class="navigation__item current"><a href="/contact-me.html" class="navigation__link">Contact me</a></li>
             </ul>
           </nav><address class="contacts"><ul class="contacts__list"><li class="contacts__item">My contacts</li><li class="contacts__item"><a href="mailto:thenoodly@gmail.com" class="contacts__link contacts__link-email">thenoodly@gmail.com</a></li><li class="contacts__item"><a href="tel:+1-(702)-964-5440" class="contacts__link contacts__link-cell">+1-(702)-964-5440</a></li><li class="contacts__item"><a href="skype:skype_no0dly?chat" class="contacts__link contacts__link-skype">no0dly</a></li></ul></address></aside>
         <div
@@ -55,10 +55,10 @@
               <h2 class="contact-me__title">Do you have interesting project? Write me.</h2></header>
             <form action="ajax.php" method="POST" name="page3-form" id="page3-form" class="contact-me__form">
               <div class="user-info">
-                <label for="contact-me-name" class="label">Name
+                <label for="contact-me-name" class="label label-left">Name
                   <input type="text" name="contact-name" placeholder="Your name" id="contact-me-name" data-validation="text" class="input-text">
                 </label>
-                <label for="contact-me-email" class="label">Email
+                <label for="contact-me-email" class="label label-right">Email
                   <input type="text" name="contact-email" placeholder="Your e-mail" id="contact-me-email" data-validation="email" class="input-text">
                 </label>
               </div>
@@ -70,7 +70,7 @@
               <div class="user-info__captcha">
                 <div data-sitekey="6LeqCggTAAAAAMTQiNX8StE6U86pDQJx4hx8NXJq" class="g-recaptcha"></div>
               </div>
-              <div class="user-info__bnt">
+              <div class="user-info__btn">
                 <div class="user-info__bnt-left">
                   <input type="submit" value="Submit" id="contact-me-sbm" class="user-info__submit contact-subm contact-btn">
                 </div>

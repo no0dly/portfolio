@@ -1,9 +1,9 @@
 header.page-header
-	.container
-		a.logo(href="")
+	.page-header__wrap
+		a.logo(href="#")
 			img.logo__img(src="images/logo.png", alt="logo")
 			span.logo__title Portfolio Vadim D.
 		ul.socials
 			each social in ['vk', 'tw', 'fb', 'gh']
 				li.socials__item
-					a( href="#" class="sptite sprite-" + social)= social
+					a(href="#" class="sprite sprite-" + social)= social

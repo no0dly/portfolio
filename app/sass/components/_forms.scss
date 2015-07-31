@@ -1,0 +1,30 @@
+.label {
+	color: #959aa8;
+	font-size: 1.0625em;
+}
+
+.input-text {
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	color: #48cbe8;
+	padding-left: 10px;
+	line-height: 41px;
+	background: #fff;
+	width: 190px;
+}
+
+.input-text::-webkit-input-placeholder {
+	color: #48cbe8;
+	font-size: 0.8125em;
+	font-family: "fira_sanslight";
+}
+.input-text:-moz-placeholder {
+	color: #48cbe8;
+	font-size: 0.8125em;
+	font-family: "fira_sanslight";
+}
+
+.error {
+	border-color : #f97e76;
+	background: rgba(249,126,118, 0.3);
+}

@@ -24,20 +24,21 @@ var gulp        = require("gulp"),
 
 // Компилируем Jade в html
 gulp.task('jade', function() {
-  gulp.src('app/templates/pages/*.jade')
-	.pipe(jade())
-	.on('error', log)
-	.pipe(prettify({indent_size: 2}))
-	.pipe(gulp.dest('app/'))
-	.pipe(reload({stream: true}));
+	gulp.src('app/templates/pages/*.jade')
+		.pipe(jade())
+		.on('error', log)
+		.pipe(prettify({indent_size: 2}))
+		.pipe(gulp.dest('app/'))
+		.pipe(reload({stream: true}));
 });
 
 // Компилируем SASS в css
 
 gulp.task('sass', function () {
-	gulp.src('./app/sass/*.scss')
-		.pipe(sass().on('error', sass.logError))
-		.pipe(gulp.dest('./app/css'))
+	gulp.src('app/sass/main.scss')
+		.pipe(sass())
+		.on('error', log)
+		.pipe(gulp.dest('app/css/'))
 		.pipe(reload({stream: true}));
 });
 
@@ -65,6 +66,7 @@ gulp.task('server', ['jade'], function () {
 gulp.task('watch', function () {
 	gulp.watch('app/templates/**/*.jade', ['jade']);
 	gulp.watch('bower.json', ['wiredep']);
+	gulp.watch('app/sass/**/*.scss', ['sass']);
 	gulp.watch([
 		'app/js/**/*.js',
 		'app/css/**/*.css'

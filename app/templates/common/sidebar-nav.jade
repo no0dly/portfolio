@@ -5,7 +5,7 @@ nav.navigation
 		each val, key in menu
 			if selected === key
 				li.navigation__item.current
-					a.navigation-link(href=val)= key
+					a.navigation__link(href=val)= key
 			else
 				li.navigation__item
-					a.navigation-link(href=val)= key
+					a.navigation__link(href=val)= key
