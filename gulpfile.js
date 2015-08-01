@@ -100,14 +100,14 @@ gulp.task('useref', function () {
 
 // Перенос шрифтов
 gulp.task('fonts', function() {
-	gulp.src('app/fonts/*')
-		.pipe(filter(['*.eot','*.svg','*.ttf','*.woff','*.woff2']))
-		.pipe(gulp.dest('dist/fonts/'));
+	gulp.src('app/fonts/**/*')
+		// .pipe(filter(['*.eot','*.svg','*.ttf','*.woff','*.woff2']))
+		.pipe(gulp.dest('dist/fonts/*'));
 });
 
 // Картинки
 gulp.task('images', function () {
-	return gulp.src('app/img/**/*')
+	return gulp.src('app/images/**/*')
 		.pipe(imagemin({
 			progressive: true,
 			interlaced: true
