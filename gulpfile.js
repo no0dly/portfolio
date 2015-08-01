@@ -102,7 +102,7 @@ gulp.task('useref', function () {
 gulp.task('fonts', function() {
 	gulp.src('app/fonts/**/*')
 		// .pipe(filter(['*.eot','*.svg','*.ttf','*.woff','*.woff2']))
-		.pipe(gulp.dest('dist/fonts/*'));
+		.pipe(gulp.dest('dist/fonts/'));
 });
 
 // Картинки
