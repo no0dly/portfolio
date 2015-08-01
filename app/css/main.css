@@ -836,7 +836,7 @@ body {
   margin: 0 10px 0 6px; }
 
 /*for ie8*/
-.no-opacity .project__logo:hover .site-image {
+.no-opacity .project__logo:hover .project__img {
   display: none; }
 
 .no-csstransforms .project-hover {

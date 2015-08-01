@@ -7,22 +7,22 @@ block title
 	title contact me
 
 block content
-		section.contact-me
-			header.contact-me__header
-				h2.contact-me__title Have an interesting project? Contact me.
-			form.contact-me__form(action="ajax.php" method="POST" name="page3-form" id="page3-form")
-				.user-info
-					label.label.label-left(for="contact-me-name") Name
-						input.input-text(type="text" name="contact-name" placeholder="Your name" id="contact-me-name" data-validation="text")
-					label.label.label-right(for="contact-me-email") Email
-						input.input-text(type="text" name="contact-email" placeholder="Your e-mail" id="contact-me-email" data-validation="email")
-				.user-info__area
-					label.label(for="prj-area") Message
-						textarea.input-text.contact-area(name="project-description" id="prj-area" placeholder="Few words about your project" data-validation="text")
-				.user-info__captcha
-					.g-recaptcha(data-sitekey="6LeqCggTAAAAAMTQiNX8StE6U86pDQJx4hx8NXJq")
-				.user-info__btn
-					.user-info__bnt-left
-						input.user-info__submit(type="submit" class="contact-subm contact-btn" value="Submit" id="contact-me-sbm")
-					.user-info__bnt-right
-						input.user-info__reset(type="reset" class="contact-clear contact-btn" value="Reset" id="contact-me-clear")
+	section.contact-me
+		header.contact-me__header
+			h2.contact-me__title Have an interesting project? Contact me.
+		form.contact-me__form(action="ajax.php" method="POST" name="page3-form" id="page3-form")
+			.user-info
+				label.label.label-left(for="contact-me-name") Name
+					input.input-text(type="text" name="contact-name" placeholder="Your name" id="contact-me-name" data-validation="text")
+				label.label.label-right(for="contact-me-email") Email
+					input.input-text(type="text" name="contact-email" placeholder="Your e-mail" id="contact-me-email" data-validation="email")
+			.user-info__area
+				label.label(for="prj-area") Message
+					textarea.input-text.contact-area(name="project-description" id="prj-area" placeholder="Few words about your project" data-validation="text")
+			.user-info__captcha
+				.g-recaptcha(data-sitekey="6LeqCggTAAAAAMTQiNX8StE6U86pDQJx4hx8NXJq")
+			.user-info__btn
+				.user-info__bnt-left
+					input.user-info__submit(type="submit" class="contact-subm contact-btn" value="Submit" id="contact-me-sbm")
+				.user-info__bnt-right
+					input.user-info__reset(type="reset" class="contact-clear contact-btn" value="Reset" id="contact-me-clear")
