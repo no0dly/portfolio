@@ -51,40 +51,40 @@
         <div
         class="main-content">
           <section class="projects">
-            <h2 class="projects__title">Мои работы</h2>
+            <h2 class="projects__title">My works</h2>
             <ul class="projects__list">
               <li class="projects__item">
                 <div class="project">
                   <div class="project__logo-wrap">
                     <div class="project__logo"><img src="images/site1.png" alt="project logo" class="project__img">
-                      <div class="project-hover"><a href="#" class="project__link-hover">there is name of website</a></div>
+                      <div class="project-hover"><a href="www.thenoodly.com" class="project__link-hover">Vadim's portfolio</a></div>
                     </div>
-                  </div><a class="project__address">www.site.com</a></div>
+                  </div><a class="project__address">www.thenoodly.com</a></div>
                 <div class="project__info">
                   <p class="project__info-text">Project information</p>
-                  <p class="project__info-text">1 превью 2 строки....</p>
+                  <p class="project__info-text">My portfolio jade+scss+js</p>
                 </div>
               </li>
               <li class="projects__item">
                 <div class="project">
                   <div class="project__logo-wrap">
                     <div class="project__logo"><img src="images/site2.png" alt="project logo" class="project__img">
-                      <div class="project-hover"><a href="#" class="project__link-hover">there is name of website</a></div>
+                      <div class="project-hover"><a href="http://cn26125.tmweb.ru/" class="project__link-hover">Draft</a></div>
                     </div>
-                  </div><a class="project__address">www.site.com</a></div>
+                  </div><a class="project__address">http://cn26125.tmweb.ru/</a></div>
                 <div class="project__info">
                   <p class="project__info-text">Project information</p>
-                  <p class="project__info-text">2 превью 2 строки....</p>
+                  <p class="project__info-text">Just a page git + gulp</p>
                 </div>
               </li>
               <li class="projects__item">
                 <div class="project">
                   <div class="project__logo-wrap">
                     <div class="project__logo"><img src="images/site3.png" alt="project logo" class="project__img">
-                      <div class="project-hover"><a href="#" class="project__link-hover">there is name of website</a></div>
+                      <div class="project-hover"><a href="http://watermarkgen.ru/" class="project__link-hover">first collective work</a></div>
                     </div>
                   </div>
-                </div><a class="project__address">www.site.com<div class="project__info"></div><p class="project__info-text">Project information</p><p class="project__info-text">3 превью 2 строки....</p></a></li>
+                </div><a class="project__address">http://watermarkgen.ru/<div class="project__info"></div><p class="project__info-text">Project information</p><p class="project__info-text">all js is my work</p></a></li>
               <li class="projects__item">
                 <div class="project">
                   <div class="project__logo-wrap">
@@ -94,7 +94,7 @@
                   </div><a class="project__address">www.site.com</a></div>
                 <div class="project__info">
                   <p class="project__info-text">Project information</p>
-                  <p class="project__info-text">4 превью 2 строки....</p>
+                  <p class="project__info-text">nothing</p>
                 </div>
               </li>
               <li class="projects__item">
@@ -111,17 +111,17 @@
         <div class="copy">© 2015. It's my website, please, don't copy or steal it.</div>
       </div>
     </footer>
-    <div class="popup">
-      <form action="ajax.php" method="POST" name="page2-form" id="open-modal" class="popup__form">
+    <div id="open-popup" class="popup">
+      <form action="ajax.php" method="POST" name="page2-form" id="add-project" class="popup__form">
         <fieldset class="popup__wrap">
           <header class="popup__header">
             <legend class="popup__title">add project</legend>
-            <a id="close-popup" class="popup__close"></a>
+            <a id="close-popup" href="#" class="popup__close"></a>
           </header>
           <div class="popup__inputs">
             <div class="form-group">
               <label for="prj-name" class="label">Project name
-                <input type="text" name="project-name" data-validation="text" placeholder="enter name of project" id="prj-name" class="input-text">
+                <input type="text" name="project-name" data-validation="text" placeholder="enter the project name" id="prj-name" class="input-text">
               </label>
             </div>
             <div class="form-group">
@@ -137,7 +137,7 @@
             </div>
             <div class="form-group">
               <label for="prj-url" class="label">Project URL
-                <input type="url" name="project-url" placeholder="add url" data-validation="text" id="prj-url" class="input-text">
+                <input type="url" name="project-url" placeholder="add URL" data-validation="text" id="prj-url" class="input-text">
               </label>
             </div>
             <div class="form-group">
@@ -160,6 +160,7 @@
     <!-- endbower-->
     <!-- endbuild-->
     <!-- build:js js/main.js-->
+    <script src="/js/main.js"></script>
     <!-- endbuild-->
   </body>
 

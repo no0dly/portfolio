@@ -39,6 +39,7 @@ body {
 /*end of sticky footer*/
 
 .container {
+	@include clearfix;
 	width: 960px;
 	margin: 0 auto;
 	height: 100%;

@@ -1,13 +1,13 @@
-.popup
-	form.popup__form(action="ajax.php" method="POST" name="page2-form" id="open-modal")
+.popup(id="open-popup")
+	form.popup__form(action="ajax.php" method="POST" name="page2-form" id="add-project")
 		fieldset.popup__wrap
 			header.popup__header
 				legend.popup__title add project
-				a.popup__close(id="close-popup")
+				a.popup__close(id="close-popup" href="#")
 			.popup__inputs
 				.form-group
 					label.label(for="prj-name") Project name
-						input.input-text(type="text" name="project-name" data-validation="text" placeholder="enter name of project" id="prj-name")
+						input.input-text(type="text" name="project-name" data-validation="text" placeholder="enter the project name" id="prj-name")
 
 				.form-group
 					label.label(for="prj-file") Project image
@@ -19,7 +19,7 @@
 				
 				.form-group
 					label.label(for="prj-url") Project URL
-						input.input-text(type="url" name="project-url" placeholder="add url" data-validation="text" id="prj-url")
+						input.input-text(type="url" name="project-url" placeholder="add URL" data-validation="text" id="prj-url")
 
 				.form-group
 					label.label(for="prj-url") Description
